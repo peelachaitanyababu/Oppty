@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="./practice.html">
+                <label for="name">Name:</label>
+                <input type="text" required placeholder="Enter Your name"><br>
+                <label for="age">Age</label>
+                <input type="number"min="1" max="90"><br>
+                <label for="Email">Email</label>
+                <input type="email" required placeholder="Enter Email"><br>
+                <label for="Password">Password</label>
+                <input type="password" pattern="[A-za-z]@"><br>
+               
+                <label for="textarea">Textarea</label>
+                <textarea  id="textarea"cols="30" placeholder="Info"></textarea><br>
+                
+                <label for="Gender">Gender</label>
+
+                 <input type="radio" name="gender" value="male"> Male
+                 <input type="radio" name="gender" value="female"> Female
+                 <input type="radio" name="gender" value="other"> Other
+                 <br>
+                 <label for="ac">Choose a ac:</label>
+
+                 <select id="ac" name="ac">
+                     <option value="">--Select--</option>
+                     <option value="lloyd">lloyd</option>
+                     <option value="diaken">diaken</option>
+                     <option value="lg">lg</option>
+                   </select>
+                   <br>
+
+
+
+               
+                    <button>submit</button>
+               
+                
+            </form>
+            
+</body>
+</html>
