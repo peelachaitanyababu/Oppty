@@ -1,0 +1,33 @@
+
+#di{
+    background-color: gray;
+    height: 400px;
+    width: 450px;
+    border-radius: 10px;
+    margin: auto;
+
+}
+#dd{
+   height: 300px;
+   width: 300px;
+   margin: 50px;
+   /* padding: 40px 20px; */
+   margin-top: 30px;
+   border-radius: 10px;
+   align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+
+
+h1{
+    font-size: 30px;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px white;
+    
+    
+}
+*body{
+    background-color: white;
+}
