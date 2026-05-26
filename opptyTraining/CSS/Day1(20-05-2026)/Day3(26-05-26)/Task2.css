@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(121, 56, 181);
+    
+}
+.aa{
+    padding: 40px;
+    text-align: center;
+}
+p{
+    color: white;
+}
+.bb{
+    margin: 80px;
+}
+.aa img{
+    border-radius: 20px;
+}
