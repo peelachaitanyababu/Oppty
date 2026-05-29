@@ -1,0 +1,91 @@
+/* .Main{
+    width: 800px;
+    height: 900px;
+    background-color: purple;
+    justify-content: center;
+    margin: 200px;
+ } */
+body{
+  background-image: linear-gradient(to right, red, orange, yellow);
+  
+}
+
+.card{   
+    background-color: rgb(28, 250, 243);
+    border-radius: 25px;
+    width: 400px;
+    height: 800px;
+    margin: 40px;
+    border: 2px solid rgb(9, 9, 9);
+    box-shadow: 5px 5px 5px whitesmoke;
+    
+}
+
+
+ .hh1{
+    width: 400px;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+    margin: 0px;
+    object-fit: cover;
+}
+
+.hh2{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    left: 42%;
+} 
+
+
+
+
+
+.ll{
+    margin-top: 90px;
+
+}
+ .cc2{
+    padding-top: 280px;
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    
+    
+}
+.c1{
+    padding-left: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 10px;
+    
+   
+}
+.c2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    height: 45px;
+    width: 150px;
+    color: rgb(9, 9, 9);
+    background-color: yellow;
+    border-radius: 30px;
+    font-weight: 100;
+    font-size: 20px;
+}
+.card h3{
+    color: rgb(68, 50, 225);
+    font-size: 32px;
+}
+.dd{
+    margin: 20px;
+    text-align: left;
+}
