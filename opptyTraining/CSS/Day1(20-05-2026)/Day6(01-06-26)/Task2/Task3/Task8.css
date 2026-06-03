@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce9e2;
+    font-family: Arial, sans-serif;
+}
+
+.card{
+    width: 900px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid #7fd8a6;
+}
+
+.top-section{
+    height: 180px;
+    background-color: #7fd8a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.logo{
+    
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+
+.logo h2{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+.company-name h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+
+.bottom-section{
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.photo-box{
+    width: 280px;
+    height: 350px;
+    border: 4px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.photo-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details{
+    flex: 1;
+}
+
+.details p{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.barcode{
+    width: 320px;
+    height: 90px;
+    background: repeating-linear-gradient(
+        to right,
+        black 0px,
+        black 6px,
+        white 6px,
+        white 12px
+    );
+    margin-top: 30px;
+}
+
+
+.signature{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.line{
+    width: 180px;
+    border-top: 3px solid black;
+    margin-left: auto;
+    margin-bottom: 8px;
+}
+
+.signature span{
+    font-size: 24px;
+}
