@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -16,11 +15,10 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     background-color: #555;
     padding: 12px 20px;
     z-index: 1000;
-    overflow-x: hidden;
 }
 
 .hh1{
@@ -29,7 +27,8 @@ body{
     align-items: center;
     gap: 12px;
     list-style: none;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 /* Accessibility Text */
@@ -38,6 +37,7 @@ body{
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .l0:hover{
@@ -46,8 +46,8 @@ body{
 
 /* A-, A, A+ Buttons */
 .l1{
-    height: 32px;
-    width: 32px;
+    height: 35px;
+    width: 35px;
     border: 1px solid orange;
     color: white;
     display: flex;
@@ -56,6 +56,7 @@ body{
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s;
+    flex-shrink: 0;
 }
 
 .l1:hover{
@@ -64,51 +65,52 @@ body{
 }
 
 /* Theme Buttons */
-.l2{
-    height: 32px;
-    width: 32px;
-    background-color: black;
-    color: orange;
+.l2,
+.l3{
+    height: 35px;
+    width: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
     cursor: pointer;
+    flex-shrink: 0;
+}
+
+.l2{
+    background-color: black;
+    color: orange;
 }
 
 .l3{
-    height: 32px;
-    width: 32px;
     background-color: white;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    cursor: pointer;
 }
 
 /* ================= SOCIAL ICONS ================= */
 .hh1 a{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.fa-square-x-twitter,
+.fa-square-facebook,
+.fa-youtube{
+    font-size: 24px;
+    transition: 0.3s;
 }
 
 .fa-square-x-twitter{
     color: black;
-    font-size: 24px;
-    transition: 0.3s;
 }
 
 .fa-square-facebook{
     color: #1877F2;
-    font-size: 24px;
-    transition: 0.3s;
 }
 
 .fa-youtube{
     color: red;
-    font-size: 24px;
-    transition: 0.3s;
 }
 
 .hh1 a:hover i{
@@ -120,11 +122,13 @@ body{
     position: relative;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .search-box input{
     width: 220px;
-    padding: 10px 40px 10px 15px;
+    height: 38px;
+    padding: 0 40px 0 15px;
     border: none;
     border-radius: 25px;
     outline: none;
@@ -141,24 +145,32 @@ body{
 /* Sitemap Icon */
 .fa-sitemap{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
 }
 
 /* ================= LANGUAGE ================= */
+.language{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 label{
     color: white;
-    margin-right: 5px;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 select{
-    padding: 8px 10px;
+    height: 38px;
+    padding: 0 10px;
     border-radius: 5px;
     border: none;
     outline: none;
     cursor: pointer;
 }
+
 
 /* ================= SECOND HEADER ================= */
 .head2{
@@ -169,7 +181,7 @@ select{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2f2f2f;
+    background-color: hsl(0, 0%, 18%);
     color: white;
     padding: 15px 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -239,31 +251,226 @@ select{
     border: 2px solid blanchedalmond;
     border-radius: 10px;
 }
-.main{
-    background-color: #2f2f2f;
-    width: 100%;
-    color: aliceblue;
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
+.main1{
+    background-color: #555;
 
+}
+.main{
+    padding: 30px;
+    
+    color: yellow;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    
+}
+.H{
+   
+    padding-right: 200px;
+}
+
+.main p {
+    color: white;
+}
+.date{
+    color: white;
 }
 .m1{
     display: flex;
-    justify-content: space-around;
-    height: 200px;
-    width: 500px;
-    /* border: 2px solid rgb(92, 232, 16); */
-    
-    
+    justify-content: space-between;
+    gap: 5px;
+    height: 350px;
+    width: 600px;
+}
+.mm1 img{
+    height: 150px;
+    width: 250px;
+}
+.md1{
+    height: 350px;
+    width: 300px;
+}
+.md1 a{
+    text-decoration: none;
+    color: yellow;
+}
+.main1 button{
+    margin: 0px;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: yellow;
+   
+}
+.pics{
+    display: flex;
+    background-color: #555;
+    /* position: relative; */
 
 }
-.m1 a{
-    color: none;
+.p1{
+    height: 250px;
+    width: 308px;
+    border: 4px solid  hsl(0, 0%, 18%);
+     transition: 0.3s ease;
+    border-radius: 10px;
 }
-.m1 h3{
-    color: rgb(244, 177, 53);
+p1:hover{
+    box-shadow: 0px 0px 20px yellow;
+    transform: scale(1.05);
 }
-.m1 img{
-    height: 100px;
+.p2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 200px;
+}
+
+.bt1 button{
+    height: 50px;
+    width: 180px;
+    background-color: yellow;
+    
+}
+.bt1 a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+.info{
+    padding-top: 100px;
+    display: flex;
+}
+.I1 h1{
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+.I1{
+    height: 900px;
+    width: 500px;
+    padding-right: 100px;
+   
+    background-image: url("https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/bg-block1.jpg");
+}
+.I3{
+    
+     height: 900;
+    width: 500px;
+    padding-left: -1000px;
+    background-image: url("https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/bg-block3.jpg");
+}
+.I2{
+    height: 900px;
+    width: 500px;
+    padding: 20px;
+    background-color: #555;
+
+}
+.ii1{
+    background: rgba(0, 0, 0, .2);
+    margin: 20px;
+}
+.ii31{
+    background-color: #161515;
+    display: grid;
+     grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+
+}
+.ii31 :hover{
+    border: 2px solid orange;
+}
+.blu{
+    background-color: #1877F2;
+
+}
+.hh3{
+    padding-left: 500px;
+    font-size: 42px;
+    color: white;
+}
+.blt{
+    display: flex;
+    justify-content: space-evenly;
+    height: 450px;
+    padding-top: 50px;
+   
+}
+.bl1{
+    height: 300px;
+    width: 350px;
+    
+}
+.bl2 a{
+    text-decoration: none;
+}
+.bl1 a{
+    text-decoration: none;
+}
+.bl2{
+    height: 300px;
+    width: 350px;
+
+}
+.gvt{
+    background-color:#555;
+    text-align: center;
+}
+.gg1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    margin: 20px;
+    gap: 0px;
+}
+.gg1 img{
+    height: 150px;
     width: 300px;
+}
+.g1{
+    color: white;
+    font-size: 32px;
+}
+.gg1 a{
+    position: relative;
+    display: inline-block;
+}
+
+.i1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: white;
+    z-index: 10;
+}
+.it{
+    /* position: absolute; */
+    
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.gg1 img{
+    height: 150px;
+    width: 300px;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.gg1 img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px orange;
+}
+.mm1:hover{
+    opacity: 0.5;
+}
+
+.footer{
+    background-color:#181818;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
 }
