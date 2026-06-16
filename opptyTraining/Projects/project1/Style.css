@@ -10,7 +10,7 @@ body{
     background-color: #f5f5f5;
 }
 
-/* ================= TOP HEADER ================= */
+/* TOP HEADER */
 .head1{
     position: fixed;
     top: 0;
@@ -87,7 +87,7 @@ body{
     color: black;
 }
 
-/* ================= SOCIAL ICONS ================= */
+/* SOCIAL ICONS  */
 .hh1 a{
     text-decoration: none;
     display: flex;
@@ -117,7 +117,7 @@ body{
     transform: scale(1.2);
 }
 
-/* ================= SEARCH BOX ================= */
+/* SEARCH BOX */
 .search-box{
     position: relative;
     display: flex;
@@ -142,14 +142,14 @@ body{
     cursor: pointer;
 }
 
-/* Sitemap Icon */
+
 .fa-sitemap{
     color: white;
     font-size: 22px;
     cursor: pointer;
 }
 
-/* ================= LANGUAGE ================= */
+
 .language{
     display: flex;
     align-items: center;
@@ -172,7 +172,7 @@ select{
 }
 
 
-/* ================= SECOND HEADER ================= */
+/*  SECOND HEADER  */
 .head2{
     position: fixed;
     top: 60px;
@@ -198,7 +198,7 @@ select{
     color: orange;
 }
 
-/* ================= HOME SECTION ================= */
+/*  HOME SECTION */
 .home{
     margin-top: 100px;
     height: 500px;
@@ -210,12 +210,14 @@ select{
     position: relative;
 }
 
-/* ================= LOGO SECTION ================= */
+/*  LOGO SECTION  */
 .home1{
     position: absolute;
     top: 30px;
     left: 30px;
+    animation: slide 2s ease 2;
 }
+
 
 .home1 a{
     display: flex;
@@ -236,7 +238,7 @@ select{
     font-weight: bold;
 }
 
-/* ================= TEXT BOX ================= */
+/*  TEXT BOX  */
 .home2{
     position: absolute;
     bottom: 40px;
@@ -263,6 +265,9 @@ select{
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+}
+.main:hover {
+    animation: slide 2s ease 1;
     
 }
 .H{
@@ -280,7 +285,7 @@ select{
     display: flex;
     justify-content: space-between;
     gap: 5px;
-    height: 350px;
+    height: 250px;
     width: 600px;
 }
 .mm1 img{
@@ -306,25 +311,32 @@ select{
 }
 .pics{
     display: flex;
-    background-color: #555;
+    /* background-color: #555; */
     /* position: relative; */
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: -30px;
 
 }
 .p1{
     height: 250px;
     width: 308px;
-    border: 4px solid  hsl(0, 0%, 18%);
+    
      transition: 0.3s ease;
     border-radius: 10px;
 }
-p1:hover{
-    box-shadow: 0px 0px 20px yellow;
-    transform: scale(1.05);
+.p1{
+    transition: 0.3s ease;
 }
+
+/* .p1:hover{
+    opacity: 0.9;
+} */
 .p2{
     display: flex;
     justify-content: space-evenly;
     padding-top: 200px;
+    /* background-color: #555; */
 }
 
 .bt1 button{
@@ -348,26 +360,33 @@ p1:hover{
 }
 .I1{
     height: 900px;
-    width: 500px;
+    width: 700px;
     padding-right: 100px;
+    padding: 40px;
    
     background-image: url("https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/bg-block1.jpg");
 }
 .I3{
     
-     height: 900;
-    width: 500px;
-    padding-left: -1000px;
+     /* height: 900;
+    width: 500px; */
+     width: 90%;
+    height: 900px;
+    /* padding-right: -800px; */
+    padding: 80px;
+    padding-right: 50px;
     background-image: url("https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/bg-block3.jpg");
+    background-size: cover;
 }
 .I2{
     height: 900px;
-    width: 500px;
+    width: 300px;
     padding: 20px;
+    
     background-color: #555;
 
 }
-.ii1{
+I2 .ii1{
     background: rgba(0, 0, 0, .2);
     margin: 20px;
 }
@@ -383,6 +402,7 @@ p1:hover{
 }
 .blu{
     background-color: #1877F2;
+    
 
 }
 .hh3{
@@ -395,13 +415,15 @@ p1:hover{
     justify-content: space-evenly;
     height: 450px;
     padding-top: 50px;
-   
+    
 }
 .bl1{
     height: 300px;
     width: 350px;
+    animation: slide 2s ease 2;
     
 }
+
 .bl2 a{
     text-decoration: none;
 }
@@ -411,6 +433,7 @@ p1:hover{
 .bl2{
     height: 300px;
     width: 350px;
+    animation: slide1 2s ease 2;
 
 }
 .gvt{
@@ -473,4 +496,39 @@ p1:hover{
     display: flex;
     justify-content: space-evenly;
     color: white;
+}
+.f3  a{
+    text-decoration: none;
+    color: white;
+}
+.f4  a{
+    text-decoration: none;
+    color: white;
+}
+.ff1{
+    padding-left:195px ;
+}
+
+
+
+
+
+
+@keyframes slide{
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slide1{
+    from{
+        transform: translateX(600px);
+    }
+
+    to{
+        transform: translateX(50px);
+    }
 }
