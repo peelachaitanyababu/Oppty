@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(248, 245, 245);
+
+    /* Fixed Header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    padding: 10px 20px;
+}
+
+.hh2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.hh21{
+    display: flex;
+    gap: 10px;
+}
+
+.hh21 a{
+    text-decoration: none;
+    color: black;
+}
+
+.hh22{
+    display: flex;
+    gap: 10px;
+}
+/* hero section css */
+.hero1{
+    background-image: url("https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/home-slider-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  
+    
+}
+.he1{
+    padding-top: 250px;
+    padding-left: 250px;
+    color: white;
+
+}
+.he2{
+    
+    padding-left: 250px;
+    color: white;
+    
+    
+
+}
+.he2 h1{
+    font-size: 58px;
+    font-family:"Playfair Display";
+}
+.he2 p{
+    padding-top: 20px;
+    padding-bottom: 200px;
+    
+}
+.design{
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.d1{
+    margin: 30px;
+    width: 250px;
+    height: 400px;
+     font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+   
+}
+.d1,.Gallery p{
+        color: #8d8787;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+.d1 h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+}
+/* .Gallery section */
+
+.gg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 20px;
+    
+}
+
+.gg1 img{
+    margin: 2px;
+    width: 500px;
+     height: 400px;
+
+}
+.gg2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.gg2 img{
+    margin: 2px;
+    width: 350px;
+    height: 200px;
+
+}
+.gs{
+    display: grid;
+    margin: 10px;
+    grid-template-columns:repeat(2,1fr);
+}
+.gs1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.gs1 img{
+    height: 300px;
+    width: 250px;
+    margin:  1px;
+}
+.gs2 img{
+    height: 300px;
+    width: 700px;
+    margin: 1px;
+}
+.sub{
+    background-image: url("https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/home-parallax-1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subb1{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    
+    color: white;
+}
+.subb1 h1{
+    padding-left: 460px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.inn{
+    display: flex;
+    justify-content: center;
+}
+.inn input{
+    height: 50px;
+    width: 400px;
+}
+inn button{
+    height: 50px;
+    width: 250px;
+    color: white;
+    
+}
