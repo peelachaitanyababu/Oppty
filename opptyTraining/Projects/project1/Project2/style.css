@@ -79,6 +79,7 @@
     padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
+    text-align: center;
 }
 .d1{
     margin: 30px;
@@ -158,6 +159,8 @@
     padding-bottom: 300px;
     
     color: white;
+    
+   
 }
 .subb1 h1{
     padding-left: 460px;
@@ -171,10 +174,240 @@
 .inn input{
     height: 50px;
     width: 400px;
+    background-color: transparent;
+    border: 1px solid white;
 }
-inn button{
+.inn button{
     height: 50px;
     width: 250px;
-    color: white;
+    color: rgb(5, 5, 5);
     
+    
+}
+.photo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.picif{
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card{
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+/* Button */
+.overlay button{
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+/* Hover */
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#tt{
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 5px;
+}
+/* Hover Effects */
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card:hover .overlay button{
+    transform: translateY(0);
+}
+
+.card img{
+    transition: 0.4s ease;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+} 
+.foo{
+
+    background-color: #faf4ed;
+}
+.foot1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot1 li{
+    list-style: none;
+}
+.foot1 h5 {
+    padding: 10px;
+    font-size: larger;
+}
+.foot1 li{
+    padding: 8px;
+    font-size: large;
+}
+.foot2{
+    display: flex;
+    justify-content: space-evenly;
+    color: #8d8787;
+    font-family: "Montserrat", sans-serif;
+}
+.foo1 a{
+    text-decoration: none;
+    color: #8d8787;
+}
+.foo1 li{
+    color: #8d8787;
+}
+.foo23{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #8d8787;
+}
+.fix{
+    position: fixed;
+    right: 0px;
+    top: 80%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.fix1,
+.fix2{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.fix1{
+    background-color: #333;
+    margin-bottom: -15px;
+}
+
+.fix2{
+    background-color: rgba(255, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+
+/* About Secition */
+.About{
+    background-image: url("https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/about-title-image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+}
+.About h1{
+        padding-top: 250px;
+
+        text-align: center;    
+        color: #222222;
+    
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 62px;
+        line-height: 40px;
+        
+
+
+}
+.About p{
+    padding: 20px;
+    text-align: center;
+}
+.Aa{
+    display: flex;
+    margin: 40px;
+    justify-content: space-around;
+}
+.Aa1{
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+.Aa2 img{
+     height: 300px;
+    width: 500px;
+
+}
+/* Contact info */
+
+.ca{
+    display: flex;
+    margin: 40px;
+    justify-content: space-between;
+}
+.ca1{
+    height: 600px;
+    width: 500px; 
+}
+.ca2{
+   
+     height: 600px;
+    width: 500px; 
+}
+.ca2 input{
+     height: 20px;
+    width: 490px;
+    padding: 20px;
+
+}
+textarea{
+    width: 490px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none; 
 }
