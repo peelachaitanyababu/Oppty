@@ -1,0 +1,77 @@
+.f {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transition: transform 2s;
+}
+
+.f:hover {
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+
+.ff {
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    transition: transform 2s;
+}
+.ff:hover{
+    background-color: cornflowerblue;
+    transform: skew(20deg,10deg);
+}
+.fY{
+     height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    transition: transform 2s;
+    margin: 10px;
+
+}
+.fY:hover{
+    background-color: cadetblue;
+    transform: rotateY(180deg);
+}
+.fX{
+     height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    transition: transform 2s;
+    margin: 10px;
+
+}
+.fX:hover{
+    background-color: cadetblue;
+    transform: rotateX(180deg);
+}
+.fl{
+     height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    transition: transform 2s;
+    margin: 10px;
+
+}
+.fl:hover{
+    background-color: rgb(148, 202, 12);
+    transform:translateX(120px);
+}
+.fm{
+     height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    transition: transform 2s;
+    margin: 10px;
+
+}
+.fm:hover{
+    background-color: rgb(148, 202, 12);
+    transform: matrix(1, 0, 0, 1, 100, 50);
+}
+
+
+/* 
+skew(20deg, 10deg)
+translateY(120px); */
