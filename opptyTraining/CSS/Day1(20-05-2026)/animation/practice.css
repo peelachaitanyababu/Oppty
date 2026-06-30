@@ -1,43 +1,51 @@
 .f {
     height: 300px;
     width: 300px;
-    border-radius: 50%;
+    
     background-color: blueviolet;
-    transition: transform 2s;
+   
+   transition-duration: 3s;
+   transition-timing-function: ease-in-out;
+    margin: 20px;
 }
 
 .f:hover {
     background-color: orange;
-    transform: scale(1.2);
+    transform: scale(0.3);
+    border-radius: 50%;
 }
 
 
 .ff {
     height: 300px;
     width: 300px;
-    background-color: blueviolet;
-    transition: transform 2s;
+    background-color: rgb(83, 225, 17);
+     transition-duration: 3s;
+   transition-timing-function: ease-in;
 }
 .ff:hover{
-    background-color: cornflowerblue;
+    background-color: rgb(18, 15, 204);
     transform: skew(20deg,10deg);
+    border-radius: 45%;
 }
 .fY{
      height: 300px;
     width: 300px;
-    background-color: blueviolet;
-    transition: transform 2s;
+    background-color: rgb(95, 91, 37);
+    transition-duration: 3s;
+   transition-timing-function: ease-out;
     margin: 10px;
 
 }
 .fY:hover{
     background-color: cadetblue;
     transform: rotateY(180deg);
+    border-radius: 30%;
 }
 .fX{
      height: 300px;
     width: 300px;
-    background-color: blueviolet;
+    background-color: rgba(230, 165, 67, 0.719);
     transition: transform 2s;
     margin: 10px;
 
@@ -45,11 +53,12 @@
 .fX:hover{
     background-color: cadetblue;
     transform: rotateX(180deg);
+    border-radius: 30%;
 }
 .fl{
      height: 300px;
     width: 300px;
-    background-color: blueviolet;
+    background-color: rgb(103, 231, 96);
     transition: transform 2s;
     margin: 10px;
 
@@ -61,17 +70,98 @@
 .fm{
      height: 300px;
     width: 300px;
-    background-color: blueviolet;
+    background-color: rgb(241, 62, 92);
     transition: transform 2s;
     margin: 10px;
 
 }
 .fm:hover{
     background-color: rgb(148, 202, 12);
-    transform: matrix(1, 0, 0, 1, 100, 50);
+    transform: matrix(1, 0, 0, 1, 100, 80);
 }
 
 
-/* 
-skew(20deg, 10deg)
-translateY(120px); */
+.fr{
+     height: 300px;
+    width: 300px;
+    background-color: rgb(158, 186, 227);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    margin: 10px;
+
+}
+.fr:hover{
+    background-color: rgb(148, 202, 12);
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+
+
+.fd{
+     height: 300px;
+    width: 300px;
+    background-color: rgb(4, 62, 149);
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    margin: 10px;
+
+}
+.fd:hover{
+    background-color: rgb(104, 231, 161);
+   
+    
+    transform:skew(45deg,45deg) scale3d(1.5, 1.5, 1.5) perspective(900px) rotateY(60deg) ;
+   
+}
+
+
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    .f,
+    .ff,
+    .fY,
+    .fX,
+    .fl,
+    .fm,
+    .fr {
+        width: 250px;
+        height: 250px;
+        margin: 15px auto;
+        background-color: blueviolet;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .f,
+    .ff,
+    .fY,
+    .fX,
+    .fl,
+    .fm,
+    .fr {
+        width: 200px;
+        height: 200px;
+        margin: 15px auto;
+        font-size: 20px;
+        background-color: burlywood;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .f,
+    .ff,
+    .fY,
+    .fX,
+    .fl,
+    .fm,
+    .fr {
+        width: 150px;
+        height: 150px;
+        margin: 10px auto;
+        font-size: 16px;
+        background-color: aqua;
+    }
+}

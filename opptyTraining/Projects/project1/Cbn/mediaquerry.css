@@ -1,0 +1,112 @@
+@media (max-width:768px){
+
+    .navi{
+        padding: 0 20px;
+    }
+
+    .nav2{
+        gap: 15px;
+    }
+
+    .nav2 a{
+        font-size: 14px;
+    }
+
+    .nav3 button{
+        width: 80px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+}
+/* hero sections */
+@media (max-width:768px){
+
+    .hero{
+        min-height: 450px;
+    }
+
+    .hh1{
+        width: 80%;
+        padding: 40px;
+    }
+
+    .hh1 h3{
+        font-size: 26px;
+    }
+
+    .hh1 h1{
+        font-size: 36px;
+    }
+
+    .hh1 p{
+        font-size: 15px;
+    }
+
+    .hh1 button{
+        width: 110px;
+        height: 42px;
+        font-size: 15px;
+    }
+
+}
+@media (max-width:576px){
+
+    .hero{
+        min-height: 400px;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hh1{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hh1 h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .hh1 h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .hh1 p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .hh1 button{
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+}
+@media (min-width:1200px){
+
+    .hero{
+        min-height: 600px;
+    }
+
+    .hh1{
+        max-width: 700px;
+        padding: 70px;
+    }
+
+    .hh1 h3{
+        font-size: 36px;
+    }
+
+    .hh1 h1{
+        font-size: 56px;
+    }
+
+    .hh1 p{
+        font-size: 18px;
+    }
+
+}
