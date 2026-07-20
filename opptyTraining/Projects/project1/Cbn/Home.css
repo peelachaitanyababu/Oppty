@@ -405,3 +405,333 @@ body{
     color: violet;
   }
  
+
+  /* ==========================================
+   Responsive Design
+========================================== */
+
+/* ---------- Tablets (1024px) ---------- */
+@media (max-width:1024px){
+
+    .navi{
+        padding: 0 20px;
+        height: 100px;
+    }
+
+    .nav2{
+        gap:15px;
+    }
+
+    .hero{
+        min-height:450px;
+    }
+
+    .hh1{
+        width:90%;
+        padding:30px;
+    }
+
+    .hh1 h1{
+        font-size:40px;
+    }
+
+    .ne{
+        grid-template-columns:repeat(2,1fr);
+        justify-items:center;
+    }
+
+    .ph{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .pho1{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .info{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .inf{
+        width:90%;
+    }
+
+    .in img{
+        width:90%;
+        height:auto;
+    }
+
+    .Achi{
+        grid-template-columns:1fr;
+    }
+
+    .ach{
+        width:100%;
+    }
+
+    .achhh{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ---------- Mobile (768px) ---------- */
+@media (max-width:768px){
+
+    body{
+        padding-top:130px;
+    }
+
+    .navi{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        gap:15px;
+    }
+
+    .nav2{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav3{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        min-height:400px;
+    }
+
+    .hh1{
+        width:100%;
+        padding:20px;
+    }
+
+    .hh1 h3{
+        font-size:24px;
+    }
+
+    .hh1 h1{
+        font-size:32px;
+    }
+
+    .hh1 p{
+        font-size:15px;
+    }
+
+    .New{
+        margin:20px;
+    }
+
+    .ne{
+        grid-template-columns:1fr;
+        justify-items:center;
+    }
+
+    .n1{
+        width:95%;
+        height:auto;
+    }
+
+    .n1 img{
+        width:100%;
+        height:auto;
+    }
+
+    .photo h5{
+        padding-left:0;
+        text-align:center;
+    }
+
+    .ph{
+        grid-template-columns:1fr;
+    }
+
+    .pho1{
+        grid-template-columns:1fr;
+        justify-items:center;
+    }
+
+    .pp1,
+    .pp2,
+    .pp3{
+        width:90%;
+        height:280px;
+    }
+
+    .pd{
+        width:100%;
+        margin-top:220px;
+    }
+
+    .pho{
+        text-align:center;
+    }
+
+    .pho img,
+    .pho button{
+        width:90%;
+        height:auto;
+    }
+
+    .info{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .inf{
+        width:100%;
+        margin:10px;
+    }
+
+    .in img{
+        width:100%;
+        height:auto;
+        margin:0;
+    }
+
+    .Aa{
+        flex-direction:column;
+    }
+
+    .A1 button{
+        width:100%;
+    }
+
+    .Achi{
+        grid-template-columns:1fr;
+    }
+
+    .ach{
+        grid-template-columns:1fr;
+        width:100%;
+    }
+
+    .ach1 img{
+        width:100%;
+        height:auto;
+    }
+
+    .ach2{
+        width:100%;
+        height:auto;
+    }
+
+    .Ach1 button{
+        width:100%;
+    }
+
+    .achhh{
+        grid-template-columns:1fr;
+    }
+
+    .foot{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        text-align:center;
+        gap:10px;
+        font-size:18px;
+    }
+}
+
+/* ---------- Small Mobile (480px) ---------- */
+@media (max-width:480px){
+
+    .nav2{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .nav3{
+        flex-direction:column;
+    }
+
+    .nav3 button{
+        width:150px;
+    }
+
+    .hh1 h1{
+        font-size:26px;
+    }
+
+    .hh1 h3{
+        font-size:20px;
+    }
+
+    .hh1 p{
+        font-size:14px;
+    }
+
+    .hh1 button{
+        width:100%;
+    }
+
+    .n1{
+        width:100%;
+    }
+
+    .pp1,
+    .pp2,
+    .pp3{
+        width:100%;
+    }
+
+    .pho img{
+        width:100%;
+    }
+
+    .pho button{
+        width:100%;
+    }
+
+    .ach1 img{
+        width:100%;
+    }
+
+    .ach3 img{
+        width:80px;
+        height:100px;
+    }
+
+    .ach4{
+        width:100%;
+        height:auto;
+    }
+
+    .foot{
+        font-size:16px;
+    }
+}
+@media (max-width:768px){
+    .nav1 img{
+        display: none;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .nav1 img{
+        display: none;
+    }
+}
+@media (max-width:1024px){
+    .nav1 img{
+        display: none;
+    }
+
+    .navi{
+        justify-content: center;
+    }
+     .nav3 i,
+    .nav2 i{
+        display: none;
+    }
+       .nav3 img,
+    .nav2 img{
+        display: none;
+    }
+     .nav3{
+        display: none;
+    }
+}

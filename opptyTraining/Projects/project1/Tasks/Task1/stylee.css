@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef2ff,#ffffff,#ecfeff);
+}
+
+.pricing-section{
+    width:100%;
+    min-height:100vh;
+    padding:80px 8%;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.heading h1{
+    font-size:48px;
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.heading p{
+    font-size:18px;
+    color:#6b7280;
+}
+
+.pricing-container{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.card{
+    position:relative;
+    width:360px;
+    background:#fff;
+    padding:40px 35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.card h2{
+    font-size:34px;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.description{
+    color:#6b7280;
+    line-height:28px;
+    margin-bottom:30px;
+}
+
+.price{
+    margin-bottom:30px;
+}
+
+.price span{
+    font-size:55px;
+    font-weight:bold;
+    color:#111827;
+}
+
+.price small{
+    display:block;
+    margin-top:5px;
+    color:#6b7280;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card ul li{
+    margin:18px 0;
+    color:#374151;
+    font-size:17px;
+}
+
+.card ul li i{
+    color:#10b981;
+    margin-right:10px;
+}
+
+.btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    margin-top:35px;
+    text-decoration:none;
+    background:#4f46e5;
+    color:#fff;
+    padding:16px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#312e81;
+}
+
+.premium{
+    background:linear-gradient(160deg,#4f46e5,#7c3aed);
+    color:#fff;
+}
+
+.premium h2,
+.premium .price span,
+.premium .description,
+.premium .price small,
+.premium ul li{
+    color:#fff;
+}
+
+.premium ul li i{
+    color:#22c55e;
+}
+
+.badge{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#f59e0b;
+    color:#fff;
+    padding:10px 25px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.premium-btn{
+    background:#fff;
+    color:#4f46e5;
+}
+
+.premium-btn:hover{
+    background:#e5e7eb;
+}
+
+@media(max-width:768px){
+
+.heading h1{
+    font-size:34px;
+}
+
+.heading p{
+    font-size:16px;
+}
+
+.card{
+    width:100%;
+}
+
+}
